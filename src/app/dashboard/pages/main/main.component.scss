@@ -1,24 +1,15 @@
 .dashboard {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  overflow-x: hidden;
   background-color: #f6f7f9;
 
   /* Top Bar */
   .top-bar {
-    background-color: #2575fc;
-    color: white;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-    h1 {
-      font-size: 1.5rem;
-      margin: 0;
-    }
+    width: 100%;
+    z-index: 1;
   }
 
   /* Main Content */
@@ -36,6 +27,7 @@
       align-items: center;
       padding: 1rem;
       position: relative;
+      min-height: calc(100vh - 60px);
 
       &.collapsed {
         width: 5%;
