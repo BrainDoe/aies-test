@@ -1,0 +1,35 @@
+<div class="dashboard">
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h1>Dashboard</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Sidebar -->
+    <div class="sidebar" [class.collapsed]="isCollapsed">
+      <div class="menu">
+        <a href="#" class="menu-item">
+          <i class="icon">🏠</i>
+          <span class="label" *ngIf="!isCollapsed">Home</span>
+        </a>
+        <a href="#" class="menu-item">
+          <i class="icon">📊</i>
+          <span class="label" *ngIf="!isCollapsed">Analytics</span>
+        </a>
+        <a href="#" class="menu-item">
+          <i class="icon">⚙️</i>
+          <span class="label" *ngIf="!isCollapsed">Settings</span>
+        </a>
+      </div>
+      <button (click)="toggleSidebar()" class="toggle-button">
+        {{ isCollapsed ? "&#x203A;" : "&#x2039;" }}
+      </button>
+    </div>
+
+    <!-- Main Area -->
+    <div class="content-area">
+      <p>Welcome to your dashboard!</p>
+    </div>
+  </div>
+</div>
