@@ -1,1 +1,82 @@
-<p>login works!</p>
+<div class="login-page">
+  <div class="left-panel">
+    <div class="top-section">
+      <div>
+        <img
+          src="../../../../assets/images/side-logo.svg"
+          alt="Small main Logo"
+        />
+      </div>
+    </div>
+    <div class="middle-section">
+      <div>
+        <h2>Welcome Back!</h2>
+        <p>Login to your account to see your shipment updates</p>
+      </div>
+      <div class="logo">
+        <img src="../../../../assets/images/main-logo.svg" alt="Logo" />
+      </div>
+    </div>
+  </div>
+  <div class="right-panel">
+    <div class="top-section">
+      <div class="img-container">
+        <div>
+          <img
+            src="../../../../assets/images/main-logo-small.svg"
+            alt="Small main Logo"
+          />
+        </div>
+        <h2>Login To Your Account</h2>
+        <p>African Imports & Exports Solutions</p>
+      </div>
+    </div>
+    <form class="login-form">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email" />
+      </div>
+      <div class="form-group password-group">
+        <label for="password">Password</label>
+        <div class="password-container">
+          <input type="password" id="password" placeholder="Enter Password" />
+          <button type="button" class="toggle-password">
+            <img
+              src="../../../../assets/images/visibility_off-icon.svg"
+              alt="Toggle Visibility"
+              class="visibility-icon"
+            />
+          </button>
+        </div>
+        <a href="/forgot-password" class="forgot-password">Forgot Password?</a>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider">
+        <hr />
+        <span>OR</span>
+        <hr />
+      </div>
+
+      <!-- Alternative Sign-Up Options -->
+      <button type="button" class="signup-option google">
+        <img
+          src="../../../../assets/images/google-icon.svg"
+          alt="Google Icon"
+        />
+        <span>Sign up with Google</span>
+      </button>
+      <button type="button" class="signup-option apple">
+        <img src="../../../../assets/images/apple-icon.svg" alt="Apple Icon" />
+        <span>Sign up with Apple ID</span>
+      </button>
+
+      <button type="submit">Sign In &#x2192;</button>
+
+      <!-- Sign-Up Prompt -->
+      <p class="signup-prompt">
+        Don't have an account? <a href="/signup" class="signup-link">Sign Up</a>
+      </p>
+    </form>
+  </div>
+</div>
