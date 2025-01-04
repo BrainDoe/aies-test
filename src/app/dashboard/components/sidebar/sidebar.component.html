@@ -1,0 +1,55 @@
+<div class="sidebar" [class.collapsed]="isCollapsed">
+  <ul class="menu">
+    <li
+      class="menu-item"
+      *ngFor="let item of menuItems; let i = index"
+      [class.active]="activeIndex === i"
+      (click)="setActiveMenu(i)"
+    >
+      <i class="material-icons">{{ item.icon }}</i>
+      <span>{{ item.label }}</span>
+    </li>
+    <!-- <li class="menu-item">
+      <i class="material-icons">dashboard</i>
+      <span *ngIf="!isCollapsed">Dashboard</span>
+    </li>
+    <li class="menu-item">
+      <i class="material-icons">local_shipping</i>
+      <span *ngIf="!isCollapsed">Shipment</span>
+    </li>
+    <li class="menu-item">
+      <i class="material-icons">inventory</i>
+      <span *ngIf="!isCollapsed">Deliveries</span>
+    </li>
+    <li class="menu-item">
+      <i class="material-icons">analytics</i>
+      <span *ngIf="!isCollapsed">Analytics</span>
+    </li>
+    <li class="menu-item">
+      <i class="material-icons">notifications</i>
+      <span *ngIf="!isCollapsed">Notifications</span>
+    </li> -->
+  </ul>
+
+  <div class="sidebar-bottom">
+    <div class="settings">
+      <i class="material-icons">settings</i>
+      <span *ngIf="!isCollapsed">Settings</span>
+    </div>
+    <div class="profile" (click)="goToProfile()">
+      <img
+        src="../../../../assets/images/profilepicture.jpg"
+        alt="User Profile"
+        class="profile-image"
+      />
+      <div class="user-info" *ngIf="!isCollapsed">
+        <span class="user-name">John Doe</span>
+        <span class="user-email">johndoeexample.com</span>
+      </div>
+      <i *ngIf="!isCollapsed" class="material-icons logout">logout</i>
+    </div>
+  </div>
+  <button class="collapse-button" (click)="toggleSidebar()">
+    <span [innerHTML]="isCollapsed ? '&#x203A;' : '&#x2039;'"></span>
+  </button>
+</div>

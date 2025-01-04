@@ -7,7 +7,9 @@
   <!-- Main Content -->
   <div class="main-content">
     <!-- Sidebar -->
-    <div class="sidebar" [class.collapsed]="isCollapsed">
+    <app-sidebar></app-sidebar>
+
+    <!-- <div class="sidebar" [class.collapsed]="isCollapsed">
       <div class="menu">
         <a href="#" class="menu-item">
           <i class="icon">🏠</i>
@@ -25,7 +27,7 @@
       <button (click)="toggleSidebar()" class="toggle-button">
         {{ isCollapsed ? "&#x203A;" : "&#x2039;" }}
       </button>
-    </div>
+    </div> -->
 
     <!-- Main Area -->
     <div class="content-area">

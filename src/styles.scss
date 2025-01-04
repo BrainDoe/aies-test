@@ -1,12 +1,17 @@
-*, p {
+*,
+p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
-html{
-  font-size: 10px;
+html {
+  font-size: 62.5%; // 62.5% of 16px = 10px
+}
+
+body {
+  background-color: #fff;
 }
 
 a {
@@ -16,3 +21,6 @@ a {
 ul {
   list-style: none;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
