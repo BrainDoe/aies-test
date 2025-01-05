@@ -8,9 +8,11 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { TotalAreaWrapperComponent } from './components/total-area-wrapper/total-area-wrapper.component';
+import { TotalAreaCardComponent } from './components/total-area-card/total-area-card.component';
 
 @NgModule({
-  declarations: [MainComponent, TopbarComponent, SidebarComponent, WelcomeComponent],
+  declarations: [MainComponent, TopbarComponent, SidebarComponent, WelcomeComponent, TotalAreaWrapperComponent, TotalAreaCardComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
