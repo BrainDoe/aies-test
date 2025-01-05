@@ -6,6 +6,16 @@ p {
   font-family: sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%; // 62.5% of 16px = 10px
 }
@@ -22,5 +32,11 @@ ul {
   list-style: none;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -7,9 +7,10 @@ import { TopbarComponent } from './components/topbar/topbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
-  declarations: [MainComponent, TopbarComponent, SidebarComponent],
+  declarations: [MainComponent, TopbarComponent, SidebarComponent, WelcomeComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
