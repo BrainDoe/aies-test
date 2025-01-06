@@ -26,10 +26,6 @@
               <span>18%</span>
             </div>
           </div>
-          <div class="analytics">
-            <h3>Analytics Overview</h3>
-            <p>Insights on daily trends and performance.</p>
-          </div>
         </div>
         <div
           *ngIf="card.customTemplate === 'customCard2'"
@@ -57,71 +53,25 @@
           *ngIf="card.customTemplate === 'customCard3'"
           class="card3-content"
         >
-          <h3>OUR WELHOUSES</h3>
+          <h3>OUR WAREHOUSES</h3>
+          <div class="select">
+            <app-custom-select [options]="options"></app-custom-select>
+          </div>
+          <div class="address">
+            <div class="top">
+              <span>Ikeja Warehouse</span>
+              <i class="material-icons">content_copy</i>
+            </div>
+            <div class="name">
+              <span class="text">
+                3770 Zip Industrial blvd SE stated, Atlanta, <br />
+                Industrial Blvd SE suite d, GA 30354, USA
+              </span>
+              <span class="map"><a href="/dashboard/main">View On Map</a></span>
+            </div>
+          </div>
         </div>
       </app-shipment-info-card>
     </div>
   </div>
 </div>
-
-<!-- Define Custom Templates -->
-<ng-template #customCard1>
-  <div class="card1-content">
-    <div class="card-header">
-      <span>SHIPMENT DELIVERED</span>
-      <div>
-        <i class="material-icons">attach_money</i>
-      </div>
-    </div>
-    <div class="card-body">
-      <span>$10,567</span>
-    </div>
-    <div class="card-footer">
-      <span><strong>+$510,77</strong> vs last year</span>
-      <div>
-        <i class="material-icons">arrow_upward</i>
-        <span>18%</span>
-      </div>
-    </div>
-    <!-- <div class="top">
-      <h3>SHIPMENT DELIVERED</h3>
-      <i class="material-icons">attach_money</i>
-    </div> -->
-    <!-- <div class="amout">
-      <span><strong>+$10,774</strong> vs last year</span>
-      <div>
-        <i class="material-icons">arrow_upward</i>
-        <span>18%</span>
-      </div>
-    </div> -->
-    <div class="analytics">
-      <h3>Analytics Overview</h3>
-      <p>Insights on daily trends and performance.</p>
-    </div>
-  </div>
-</ng-template>
-
-<ng-template #customCard2>
-  <div class="card2-content">
-    <h3>Sales Data</h3>
-    <canvas id="salesChart"></canvas>
-  </div>
-</ng-template>
-
-<ng-template #customCard3>
-  <div class="card3-content">
-    <h3>Recent Notifications</h3>
-    <ul>
-      <li *ngFor="let notification of notifications">{{ notification }}</li>
-    </ul>
-  </div>
-</ng-template>
-
-<ng-template #customCard4>
-  <div class="card4-content">
-    <img src="assets/user-avatar.jpg" alt="User Avatar" class="profile-img" />
-    <h3>{{ user.name }}</h3>
-    <p>{{ user.email }}</p>
-    <button class="edit-profile-btn">Edit Profile</button>
-  </div>
-</ng-template>

@@ -1,0 +1,17 @@
+<div class="custom-select" (click)="toggleDropdown()">
+  <div class="select-header">
+    <span>{{ selectedOption || placeholder }}</span>
+    <i class="material-icons chevron">{{
+      isOpen ? "keyboard_arrow_up" : "keyboard_arrow_down"
+    }}</i>
+  </div>
+  <ul class="select-options" *ngIf="isOpen">
+    <li
+      *ngFor="let option of options"
+      (click)="selectOption(option)"
+      [class.selected]="option === selectedOption"
+    >
+      {{ option }}
+    </li>
+  </ul>
+</div>

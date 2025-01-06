@@ -1,0 +1,47 @@
+.custom-select {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  user-select: none;
+
+  .select-header {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9fafb;
+
+    .chevron {
+      font-size: 1.5rem;
+      color: #999;
+    }
+  }
+
+  .select-options {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+
+    li {
+      padding: 0.8rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #f1f1f1;
+      }
+
+      &.selected {
+        background-color: #5794d6;
+        color: white;
+      }
+    }
+  }
+}

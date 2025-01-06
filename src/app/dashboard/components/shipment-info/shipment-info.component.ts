@@ -6,12 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './shipment-info.component.scss',
 })
 export class ShipmentInfoComponent {
-  notifications = [
-    'New order received',
-    'Item out of stock',
-    'Weekly report available',
-  ];
-  user = { name: 'John Doe', email: 'john.doe@example.com' };
+  options: string[] = ['Ikeja Warehouse', 'Option 2', 'Option 3'];
 
   cards = [
     {
