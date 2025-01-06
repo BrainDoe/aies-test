@@ -194,7 +194,7 @@
 
   .address {
     margin-top: 0.5rem;
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem;
     background-color: #f9fafb;
     border-radius: 0.5rem;
 
@@ -218,15 +218,47 @@
       text-align: center;
       .text {
         font-size: 0.7rem;
-        margin-bottom: 0;
+        margin-bottom: 0.8rem;
         color: #81909d;
         display: inline-block;
+        line-height: 1rem;
       }
 
       .map a {
         font-size: 1rem;
         color: #28c470;
         display: block;
+      }
+    }
+  }
+}
+
+.card4-content {
+  width: 100%;
+
+  h3 {
+    font-size: 1rem;
+    color: #434343;
+    margin-bottom: 0px;
+  }
+
+  .address-list {
+    li {
+      border-bottom: 1px solid #dacdcd;
+      padding-bottom: 0.5rem;
+
+      h5 {
+        font-size: 0.8rem;
+        color: #434343;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      .text {
+        font-size: 0.7rem;
+        margin-bottom: 0;
+        line-height: 1rem;
+        color: #81909d;
+        display: inline-block;
       }
     }
   }
