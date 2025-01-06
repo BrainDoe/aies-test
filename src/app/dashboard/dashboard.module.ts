@@ -11,9 +11,10 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { TotalAreaWrapperComponent } from './components/total-area-wrapper/total-area-wrapper.component';
 import { TotalAreaCardComponent } from './components/total-area-card/total-area-card.component';
 import { ShipmentInfoComponent } from './components/shipment-info/shipment-info.component';
+import { ShipmentInfoCardComponent } from './components/shipment-info-card/shipment-info-card.component';
 
 @NgModule({
-  declarations: [MainComponent, TopbarComponent, SidebarComponent, WelcomeComponent, TotalAreaWrapperComponent, TotalAreaCardComponent, ShipmentInfoComponent],
+  declarations: [MainComponent, TopbarComponent, SidebarComponent, WelcomeComponent, TotalAreaWrapperComponent, TotalAreaCardComponent, ShipmentInfoComponent, ShipmentInfoCardComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
