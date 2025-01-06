@@ -1,0 +1,65 @@
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th *ngFor="let column of columns">
+          {{ column | uppercase }}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of data">
+        <td *ngFor="let column of columns; let i = index">
+          <!-- Status Column -->
+          <!-- <ng-container *ngIf="column === 'STATUS'">
+            <span class="badge" [ngClass]="getBadgeClass(row[column])">
+              {{ row[column] }}
+            </span>
+          </ng-container> -->
+          <ng-container *ngIf="column === 'status'">
+            <div>
+              <span class="badge" [ngClass]="getBadgeClass(row[column])">
+                {{ row[column] }}
+              </span>
+            </div>
+          </ng-container>
+
+          <!-- Action Column -->
+          <ng-container *ngIf="column === 'actions'">
+            <span class="action-dots" (click)="onAction(row)">
+              &#x2022;&#x2022;&#x2022;
+            </span>
+          </ng-container>
+
+          <!-- Destination Column with Flag -->
+          <ng-container *ngIf="column === 'destination'">
+            <div class="destination">
+              <img [src]="row[column]?.flag" alt="flag" class="flag-icon" />
+              <span>{{ row[column]?.city }}</span>
+            </div>
+          </ng-container>
+
+          <!-- Courier Column with Logo -->
+          <ng-container *ngIf="column === 'courier'">
+            <div class="courier">
+              <img [src]="row[column]?.logo" alt="logo" class="logo-icon" />
+              {{ row[column]?.name }}
+            </div>
+          </ng-container>
+
+          <!-- Other Columns -->
+          <ng-container
+            *ngIf="
+              column !== 'status' &&
+              column !== 'actions' &&
+              column !== 'destination' &&
+              column !== 'courier'
+            "
+          >
+            {{ row[column] }}
+          </ng-container>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

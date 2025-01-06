@@ -1,0 +1,44 @@
+.shipping-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+
+  .container {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    .content-wrapper {
+      min-height: 3rem;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 0.8rem;
+      padding: 1.5rem 1rem;
+
+      .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #434343;
+          margin-bottom: 0;
+        }
+
+        .view-all {
+          font-size: 1rem;
+          color: #434343;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

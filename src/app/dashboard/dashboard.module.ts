@@ -13,6 +13,7 @@ import { TotalAreaCardComponent } from './components/total-area-card/total-area-
 import { ShipmentInfoComponent } from './components/shipment-info/shipment-info.component';
 import { ShipmentInfoCardComponent } from './components/shipment-info-card/shipment-info-card.component';
 import { SharedModule } from '../shared/shared.module';
+import { ShippingListComponent } from './components/shipping-list/shipping-list.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SharedModule } from '../shared/shared.module';
     TotalAreaCardComponent,
     ShipmentInfoComponent,
     ShipmentInfoCardComponent,
+    ShippingListComponent,
   ],
   imports: [
     CommonModule,
